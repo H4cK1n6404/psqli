@@ -13,7 +13,7 @@
   <img src="https://i.ibb.co/JjGDcgw/psqli2.png">
 </p>
 
-#### Fitur
+### Fitur
 
 - singgle site injection
 - Mass Xploit sql-injection
@@ -28,4 +28,47 @@
 - Dork generator
 - New Admin Finder
 - Psqli Sqli/Xss/LFI/AdminFinder Scanner
+
+### Methode injection
+
+#### psqli mempunyai 2 metode inject
+
+- Union based method
+- Error based method
+
+#### Di lengkapi
+
+- auto detect vuln
+- order by bisa di sesuaikan
+- auto detect string based
+- new bypassing waf query
+- multiple injection method
+- auto filtering table
+- auto correct input db dan table
+- local variabel method
+- tertanam 6 dios racikan master sqli
+- auto filter email::password
+- auto scaning dorking
+- skip prosess dengan ctrl+c atau ctrl+d
+- query bisa di edit sesuai selera
+- html injection
+- base64 injection
+- double query injection
+- post method injection
+- mencari login page dengan 2 method
+- fast URL scraping atau crawler
+- auto dorking edit lahh bagian .sites dan .key untuk mendapatkan hasil yang memuaskan
+- mudahh edit input output di bagian atas script
+- Dan masih banyak lagi
+
+### Instalasi
+```bash
+$ apt-get install bash curl git
+$ git clone https://github.com/Agressiv1njector/psqli
+$ cd psqli
+$ bash psqli.sh
+$ bash psqli.sh s #untuk string based injection only
+```
+**psqli* is licensed under [GPL v3.0 license](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
 

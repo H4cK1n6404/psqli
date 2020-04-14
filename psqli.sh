@@ -2134,7 +2134,7 @@ echo -e "\033[1m$N[$R+$N] \e[38;5;81m${O}PSQLI MENU\e[0m
 [${O}11${N}]. Dork generator
 [${O}12${N}]. New Admin Finder
 [${O}13${N}]. Psqli Sqli/Xss/LFI/AdminFinder Scanner
-[${G}ENTER${N}]\033[2m for exit${N}"
+\033[2m press Enter for exit${N}"
 echo -ne "[${R}?${N}] yg mana ?? "
 read d
 case $d in

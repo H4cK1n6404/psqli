@@ -61,6 +61,16 @@
 - mudahh edit input output di bagian atas script
 - Dan masih banyak lagi
 
+### Fix error inject site
+- https://www.prettypetalsstore.com/single.php?id=68
+- https://www.smkdarulmuqomah.id/statis-16-program-keahlian.html
+- https://www.sedimental.com/catalog/index.php?ID=80
+- http://sekarlaut.com/products.php?ID=23&cID=1
+- http://lexsite.com/latestArticle.php?id=5
+- http://gandariacity.co.id/tenant.php?id=17
+- http://tf.lan.go.id/statis-1-profil.html
+- http://www.godmother.co.uk/single-blog.php?blog_id=66
+
 ### Instalasi
 ```bash
 $ apt-get install bash curl git

@@ -8,10 +8,7 @@
 <p align="center">
   </a>
   <a href="https://github.com/Agressiv1njector/psqli">
-     <img src="https://i.ibb.co/SRxwPZw/1586858881-pic.jpg" height="23" width="98">
-  </a>
-   <a href="https://github.com/Agressiv1njector/psqli">
-    <img src="https://i.ibb.co/wRhtqKX/1586858881-picsay.jpg height="40" width="100">
+     <img src="https://i.ibb.co/br5DH3z/1586858881-picsay.jpg" height="30" width="210">
   </a>
 </p>
   

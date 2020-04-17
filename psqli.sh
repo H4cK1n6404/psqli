@@ -204,7 +204,8 @@ then
   for site3 in $(cat .result_dork 2>/dev/null | sort -u | uniq -i | sed 's/\r$//' | tr -d "\0" | grep -a "$dir")
   do
     ngecurl=$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" -s -L --max-time $time_out "$site3" | tr -d '\0' | sed 's/\r$//')
-    if echo "$ngecurl" | grep -Po "User|user|password|Password|Username|username|Log in|Login|sign in|Sign in|masuk|Masuk|Daftar" >/dev/null #[ "$_ngecurl" = "200" ]
+    if echo "$ngecurl" | grep -aPo "User|user|password|Password|Username|username|Log in|Login|sign in|Sign in"
+ >/dev/null
          then
              if echo "$ngecurl" | grep -Po "WordPress|wp-admin|wp-uploads|wp-content|wp-login" >/dev/null
              then
